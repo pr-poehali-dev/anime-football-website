@@ -22,8 +22,13 @@ const HeroSection = () => {
               className="w-72 h-48 object-contain animate-pulse"
             />
           </div>
-          <h2 className="text-2xl md:text-4xl font-bold mb-8 text-shadow-lg">
-            ⚽ Аниме Футбольная Битва ⚽
+          <h2 className="text-3xl md:text-5xl font-bold mb-8 text-shadow-lg bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500 bg-clip-text text-transparent animate-pulse">
+            🔥 хочешь начать побеждать?
+            <br />
+            <span className="text-2xl md:text-4xl bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+              тогда начни это прямо сейчас
+            </span>{" "}
+            ⚡
           </h2>
           <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto leading-relaxed">
             Присоединяйся к эпической футбольной саге! Собери команду
