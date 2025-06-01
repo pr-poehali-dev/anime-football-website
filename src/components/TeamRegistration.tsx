@@ -12,6 +12,14 @@ import {
 } from "@/components/ui/dialog";
 
 export default function TeamRegistration() {
+  const [telegram, setTelegram] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Регистрация команды:", { telegram, email });
+  };
+
   return (
     <Dialog>
       <DialogTrigger asChild>
