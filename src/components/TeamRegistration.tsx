@@ -11,30 +11,15 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-const TeamRegistration = () => {
-  const [telegram, setTelegram] = useState("");
-  const [email, setEmail] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (telegram && email) {
-      console.log("Registration data:", { telegram, email });
-      // Здесь будет обработка регистрации
-      setIsOpen(false);
-      setTelegram("");
-      setEmail("");
-    }
-  };
-
+export default function TeamRegistration() {
   return (
-    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+    <Dialog>
       <DialogTrigger asChild>
         <Button
           size="lg"
-          className="bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-bold py-4 px-8 rounded-full text-xl transform hover:scale-105 transition-all duration-300 shadow-lg"
+          className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
         >
-          ⚡ Регистрация Команды
+          Регистрация команды
         </Button>
       </DialogTrigger>
 
@@ -89,6 +74,6 @@ const TeamRegistration = () => {
       </DialogContent>
     </Dialog>
   );
-};
+}
 
 export default TeamRegistration;
