@@ -17,7 +17,7 @@ const HeroSection = () => {
         <div className="text-center text-white">
           <div className="mb-6 flex justify-center">
             <img
-              src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=300&h=200&fit=crop"
+              src="https://cdn.poehali.dev/files/9e0519dc-849e-40d5-885f-67be5be9fc5b.png"
               alt="REMATCH Logo"
               className="w-72 h-48 object-contain animate-pulse"
             />
