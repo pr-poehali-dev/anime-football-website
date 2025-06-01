@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import TeamRegistration from "@/components/TeamRegistration";
 
 const HeroSection = () => {
   return (
@@ -32,6 +33,7 @@ const HeroSection = () => {
             >
               🎮 Начать Игру
             </Button>
+            <TeamRegistration />
             <Button
               variant="outline"
               size="lg"
