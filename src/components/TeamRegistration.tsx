@@ -14,14 +14,23 @@ import {
 export default function TeamRegistration() {
   const [telegram, setTelegram] = useState("");
   const [email, setEmail] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Регистрация команды:", { telegram, email });
+
+    // Очищаем форму и закрываем диалог
+    setTelegram("");
+    setEmail("");
+    setIsOpen(false);
+
+    // Показываем уведомление об успехе
+    alert("🎉 Команда зарегистрирована! Скоро с вами свяжутся.");
   };
 
   return (
-    <Dialog>
+    <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
         <Button
           size="lg"

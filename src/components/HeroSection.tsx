@@ -15,9 +15,13 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-6 pt-20 pb-16">
         <div className="text-center text-white">
-          <h1 className="text-6xl md:text-8xl font-black mb-6 bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500 bg-clip-text text-transparent animate-pulse">
-            REMATCH
-          </h1>
+          <div className="mb-6 flex justify-center">
+            <img
+              src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=300&h=200&fit=crop"
+              alt="REMATCH Logo"
+              className="w-72 h-48 object-contain animate-pulse"
+            />
+          </div>
           <h2 className="text-2xl md:text-4xl font-bold mb-8 text-shadow-lg">
             ⚽ Аниме Футбольная Битва ⚽
           </h2>
